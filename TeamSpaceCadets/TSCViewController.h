@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SBJson.h"
+#import "TSCBookContentViewController.h"
+#import "TSCProgressViewController.h"
 
-@interface TSCViewController : UIViewController
+@interface TSCViewController : UIViewController<UIPageViewControllerDelegate,UIPageViewControllerDataSource>
+
+@property (nonatomic, strong) UIPageViewController *pageViewController;
+@property (nonatomic, strong) NSMutableArray *modelArray;
+
+@property TSCProgressViewController *progressBar;
 
 @end
