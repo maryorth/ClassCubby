@@ -1,18 +1,19 @@
 //
-//  TSCDrawViewController.m
+//  TSCMulptipleChoiceViewController.m
 //  TeamSpaceCadets
 //
-//  Created by Mary Orth on 12/18/12.
+//  Created by Mary Orth on 12/27/12.
 //  Copyright (c) 2012 RIT Space Cadets. All rights reserved.
 //
 
-#import "TSCDrawViewController.h"
+#import "TSCMulptipleChoiceViewController.h"
 
-@interface TSCDrawViewController ()
+@interface TSCMulptipleChoiceViewController ()
 
 @end
 
-@implementation TSCDrawViewController
+@implementation TSCMulptipleChoiceViewController
+@synthesize chosenNumber, correctNumber, answerLabelA, answerLabelB, answerLabelC, answerLabelD;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,5 +36,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+- (IBAction)choiceSelected:(id)sender {
+    chosenNumber = [sender tag];
+    NSLog(@"you chose number: %d", chosenNumber);
+}
 @end

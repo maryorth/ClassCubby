@@ -12,6 +12,9 @@
 		3F7A2C491680092300C7CBA4 /* TSCProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7A2C471680092300C7CBA4 /* TSCProgressViewController.xib */; };
 		3FA97D75167CEAF200039F44 /* TSCBookContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA97D73167CEAF200039F44 /* TSCBookContentViewController.m */; };
 		3FA97D76167CEAF200039F44 /* TSCBookContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FA97D74167CEAF200039F44 /* TSCBookContentViewController.xib */; };
+		7A31CCCD16864A660037E7E5 /* drawBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A31CCCC16864A660037E7E5 /* drawBG.jpg */; };
+		7A31CCD7168656BD0037E7E5 /* TSCBlankLetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31CCD5168656BD0037E7E5 /* TSCBlankLetterViewController.m */; };
+		7A31CCD8168656BD0037E7E5 /* TSCBlankLetterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A31CCD6168656BD0037E7E5 /* TSCBlankLetterViewController.xib */; };
 		7A547FBF166DA3E1000159B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A547FBE166DA3E1000159B7 /* UIKit.framework */; };
 		7A547FC1166DA3E1000159B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A547FC0166DA3E1000159B7 /* Foundation.framework */; };
 		7A547FC3166DA3E1000159B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A547FC2166DA3E1000159B7 /* CoreGraphics.framework */; };
@@ -21,7 +24,6 @@
 		7A547FD1166DA3E1000159B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A547FD0166DA3E1000159B7 /* Default.png */; };
 		7A547FD3166DA3E1000159B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A547FD2166DA3E1000159B7 /* Default@2x.png */; };
 		7A547FD5166DA3E1000159B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A547FD4166DA3E1000159B7 /* Default-568h@2x.png */; };
-		7A547FD8166DA3E1000159B7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A547FD6166DA3E1000159B7 /* MainStoryboard.storyboard */; };
 		7A547FDB166DA3E1000159B7 /* TSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A547FDA166DA3E1000159B7 /* TSCViewController.m */; };
 		7A548026166E8851000159B7 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A54800E166E8851000159B7 /* NSObject+SBJson.m */; };
 		7A548027166E8851000159B7 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A548011166E8851000159B7 /* SBJsonParser.m */; };
@@ -37,6 +39,12 @@
 		7A548031166E8851000159B7 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A548025166E8851000159B7 /* SBJsonWriter.m */; };
 		7A94267916811AEF00457162 /* TSCDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A94267816811AEF00457162 /* TSCDrawViewController.m */; };
 		7A94267D16811B3E00457162 /* TSCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A94267C16811B3E00457162 /* TSCTestViewController.m */; };
+		7AB137AB168B6A0D0049A6C5 /* N.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB137A8168B6A0D0049A6C5 /* N.png */; };
+		7AB137AC168B6A0D0049A6C5 /* M.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB137A9168B6A0D0049A6C5 /* M.png */; };
+		7AB137B3168B76830049A6C5 /* O.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB137B2168B76830049A6C5 /* O.png */; };
+		7AB137BB168C115E0049A6C5 /* TSCMulptipleChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB137B9168C115E0049A6C5 /* TSCMulptipleChoiceViewController.m */; };
+		7AB137BC168C115E0049A6C5 /* TSCMulptipleChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AB137BA168C115E0049A6C5 /* TSCMulptipleChoiceViewController.xib */; };
+		7AB137BF168C1A410049A6C5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB137BD168C1A410049A6C5 /* MainStoryboard.storyboard */; };
 		7AF25546167290A600CF6BE6 /* TSCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF25545167290A600CF6BE6 /* TSCUtility.m */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +56,10 @@
 		3FA97D72167CEAF200039F44 /* TSCBookContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCBookContentViewController.h; sourceTree = "<group>"; };
 		3FA97D73167CEAF200039F44 /* TSCBookContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCBookContentViewController.m; sourceTree = "<group>"; };
 		3FA97D74167CEAF200039F44 /* TSCBookContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSCBookContentViewController.xib; sourceTree = "<group>"; };
+		7A31CCCC16864A660037E7E5 /* drawBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drawBG.jpg; sourceTree = "<group>"; };
+		7A31CCD4168656BD0037E7E5 /* TSCBlankLetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSCBlankLetterViewController.h; path = ../TSCBlankLetterViewController.h; sourceTree = "<group>"; };
+		7A31CCD5168656BD0037E7E5 /* TSCBlankLetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSCBlankLetterViewController.m; path = ../TSCBlankLetterViewController.m; sourceTree = "<group>"; };
+		7A31CCD6168656BD0037E7E5 /* TSCBlankLetterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TSCBlankLetterViewController.xib; path = ../TSCBlankLetterViewController.xib; sourceTree = "<group>"; };
 		7A547FBA166DA3E1000159B7 /* TeamSpaceCadets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamSpaceCadets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A547FBE166DA3E1000159B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7A547FC0166DA3E1000159B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,7 +73,6 @@
 		7A547FD0166DA3E1000159B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		7A547FD2166DA3E1000159B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7A547FD4166DA3E1000159B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		7A547FD7166DA3E1000159B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7A547FD9166DA3E1000159B7 /* TSCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSCViewController.h; sourceTree = "<group>"; };
 		7A547FDA166DA3E1000159B7 /* TSCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSCViewController.m; sourceTree = "<group>"; };
 		7A54800D166E8851000159B7 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
@@ -93,6 +104,13 @@
 		7A94267816811AEF00457162 /* TSCDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCDrawViewController.m; sourceTree = "<group>"; };
 		7A94267B16811B3E00457162 /* TSCTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTestViewController.h; sourceTree = "<group>"; };
 		7A94267C16811B3E00457162 /* TSCTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCTestViewController.m; sourceTree = "<group>"; };
+		7AB137A8168B6A0D0049A6C5 /* N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = N.png; sourceTree = "<group>"; };
+		7AB137A9168B6A0D0049A6C5 /* M.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = M.png; sourceTree = "<group>"; };
+		7AB137B2168B76830049A6C5 /* O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = O.png; path = ../O.png; sourceTree = "<group>"; };
+		7AB137B8168C115E0049A6C5 /* TSCMulptipleChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCMulptipleChoiceViewController.h; sourceTree = "<group>"; };
+		7AB137B9168C115E0049A6C5 /* TSCMulptipleChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCMulptipleChoiceViewController.m; sourceTree = "<group>"; };
+		7AB137BA168C115E0049A6C5 /* TSCMulptipleChoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSCMulptipleChoiceViewController.xib; sourceTree = "<group>"; };
+		7AB137BE168C1A410049A6C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = TeamSpaceCadets/en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7AF25544167290A600CF6BE6 /* TSCUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCUtility.h; sourceTree = "<group>"; };
 		7AF25545167290A600CF6BE6 /* TSCUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,11 +160,18 @@
 		7A547FC4166DA3E1000159B7 /* TeamSpaceCadets */ = {
 			isa = PBXGroup;
 			children = (
+				7AB137BD168C1A410049A6C5 /* MainStoryboard.storyboard */,
 				7A547FCD166DA3E1000159B7 /* TSCAppDelegate.h */,
 				7A547FCE166DA3E1000159B7 /* TSCAppDelegate.m */,
-				7A547FD6166DA3E1000159B7 /* MainStoryboard.storyboard */,
+				7A547FD9166DA3E1000159B7 /* TSCViewController.h */,
+				7A547FDA166DA3E1000159B7 /* TSCViewController.m */,
+				7AF25544167290A600CF6BE6 /* TSCUtility.h */,
+				7AF25545167290A600CF6BE6 /* TSCUtility.m */,
 				7A94267B16811B3E00457162 /* TSCTestViewController.h */,
 				7A94267C16811B3E00457162 /* TSCTestViewController.m */,
+				7AB137B8168C115E0049A6C5 /* TSCMulptipleChoiceViewController.h */,
+				7AB137B9168C115E0049A6C5 /* TSCMulptipleChoiceViewController.m */,
+				7AB137BA168C115E0049A6C5 /* TSCMulptipleChoiceViewController.xib */,
 				7A94267716811AEE00457162 /* TSCDrawViewController.h */,
 				7A94267816811AEF00457162 /* TSCDrawViewController.m */,
 				3FA97D72167CEAF200039F44 /* TSCBookContentViewController.h */,
@@ -155,10 +180,13 @@
 				3F7A2C451680092300C7CBA4 /* TSCProgressViewController.h */,
 				3F7A2C461680092300C7CBA4 /* TSCProgressViewController.m */,
 				3F7A2C471680092300C7CBA4 /* TSCProgressViewController.xib */,
-				7A547FD9166DA3E1000159B7 /* TSCViewController.h */,
-				7A547FDA166DA3E1000159B7 /* TSCViewController.m */,
-				7AF25544167290A600CF6BE6 /* TSCUtility.h */,
-				7AF25545167290A600CF6BE6 /* TSCUtility.m */,
+				7A31CCD4168656BD0037E7E5 /* TSCBlankLetterViewController.h */,
+				7A31CCD5168656BD0037E7E5 /* TSCBlankLetterViewController.m */,
+				7A31CCD6168656BD0037E7E5 /* TSCBlankLetterViewController.xib */,
+				7A31CCCC16864A660037E7E5 /* drawBG.jpg */,
+				7AB137B2168B76830049A6C5 /* O.png */,
+				7AB137A8168B6A0D0049A6C5 /* N.png */,
+				7AB137A9168B6A0D0049A6C5 /* M.png */,
 				7A547FC5166DA3E1000159B7 /* Supporting Files */,
 			);
 			path = TeamSpaceCadets;
@@ -267,10 +295,16 @@
 				7A547FD1166DA3E1000159B7 /* Default.png in Resources */,
 				7A547FD3166DA3E1000159B7 /* Default@2x.png in Resources */,
 				7A547FD5166DA3E1000159B7 /* Default-568h@2x.png in Resources */,
-				7A547FD8166DA3E1000159B7 /* MainStoryboard.storyboard in Resources */,
 				3FA97D76167CEAF200039F44 /* TSCBookContentViewController.xib in Resources */,
 				3F7A2C401680051D00C7CBA4 /* reading_page_background.png in Resources */,
 				3F7A2C491680092300C7CBA4 /* TSCProgressViewController.xib in Resources */,
+				7A31CCCD16864A660037E7E5 /* drawBG.jpg in Resources */,
+				7A31CCD8168656BD0037E7E5 /* TSCBlankLetterViewController.xib in Resources */,
+				7AB137AB168B6A0D0049A6C5 /* N.png in Resources */,
+				7AB137AC168B6A0D0049A6C5 /* M.png in Resources */,
+				7AB137B3168B76830049A6C5 /* O.png in Resources */,
+				7AB137BC168C115E0049A6C5 /* TSCMulptipleChoiceViewController.xib in Resources */,
+				7AB137BF168C1A410049A6C5 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +335,8 @@
 				3F7A2C481680092300C7CBA4 /* TSCProgressViewController.m in Sources */,
 				7A94267916811AEF00457162 /* TSCDrawViewController.m in Sources */,
 				7A94267D16811B3E00457162 /* TSCTestViewController.m in Sources */,
+				7A31CCD7168656BD0037E7E5 /* TSCBlankLetterViewController.m in Sources */,
+				7AB137BB168C115E0049A6C5 /* TSCMulptipleChoiceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,12 +351,13 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		7A547FD6166DA3E1000159B7 /* MainStoryboard.storyboard */ = {
+		7AB137BD168C1A410049A6C5 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7A547FD7166DA3E1000159B7 /* en */,
+				7AB137BE168C1A410049A6C5 /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
