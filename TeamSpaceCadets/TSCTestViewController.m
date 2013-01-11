@@ -62,13 +62,17 @@
     for (int i=0; i<totalQuestions; i++) {
         // ****** for fill-in-the-blanks questions: ****** //
         if (typeQuestion == @"fib") {
+            /*
             TSCFillinBlanksViewController *fillinBlanksView = [[TSCFillinBlanksViewController alloc] initWithQuestion:questionsString currentQuest:currentQuestion totalQuest:totalQuestions totalBlanks:howManyBlanks];
             [viewsArray addObject:fillinBlanksView];
+             */
         }
         
         // ****** for multiple choice questions: ****** //
         else if (typeQuestion == @"mc") {
+            /*
             [viewsArray addObject:[TSCMultChoiceViewController setupMultChoice]];
+             */
         }
     }
     
