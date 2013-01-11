@@ -1,18 +1,18 @@
 //
-//  TSCMulptipleChoiceViewController.m
+//  TSCMultipleChoiceViewController
 //  TeamSpaceCadets
 //
 //  Created by Mary Orth on 12/27/12.
 //  Copyright (c) 2012 RIT Space Cadets. All rights reserved.
 //
 
-#import "TSCMulptipleChoiceViewController.h"
+#import "TSCMultipleChoiceViewController.h"
 
-@interface TSCMulptipleChoiceViewController ()
+@interface TSCMultipleChoiceViewController ()
 
 @end
 
-@implementation TSCMulptipleChoiceViewController
+@implementation TSCMultipleChoiceViewController
 @synthesize chosenNumber, correctNumber, answerLabelA, answerLabelB, answerLabelC, answerLabelD;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

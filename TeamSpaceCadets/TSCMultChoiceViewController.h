@@ -1,5 +1,5 @@
 //
-//  TSCMulptipleChoiceViewController.h
+//  TSCMultChoiceViewController
 //  TeamSpaceCadets
 //
 //  Created by Mary Orth on 12/27/12.
@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TSCMulptipleChoiceViewController : UIViewController
+@interface TSCMultChoiceViewController : UIViewController
 - (IBAction)choiceSelected:(id)sender;
+- (UIView *)setupMultChoice;
+
+@property NSMutableDictionary *questionAndAnswers;
+@property NSString *answer1Txt;
+@property NSString *answer2Txt;
+@property NSString *answer3Txt;
+@property NSString *answer4Txt;
 
 @property (strong, nonatomic) IBOutlet UILabel *answerLabelA;
 @property (strong, nonatomic) IBOutlet UILabel *answerLabelB;
@@ -18,5 +25,7 @@
 
 @property int chosenNumber;
 @property int correctNumber;
+@property (strong, nonatomic) IBOutlet UILabel *questionCounter;
+@property (strong, nonatomic) IBOutlet UILabel *questionText;
 
 @end

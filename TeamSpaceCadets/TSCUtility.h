@@ -20,4 +20,5 @@
                   withY:(int)yPos
            stickerScale:(int)scale
      stickerOrientation:(int)orientation;
++ (NSMutableArray *)getTest: (int)bookID;
 @end

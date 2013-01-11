@@ -69,43 +69,48 @@
     return returnDrawings;
 }
 
-+ (NSMutableArray *)getStickerBook:(int)studentID {
-    //NSString *urlPrefix = @"http://spacecadets.cias.rit.edu/Application/";
-    
-    NSString *surl = @"http://spacecadets.cias.rit.edu/Application/mid.php?method=getStickerBook&a=profile&data=";
-    NSString *sID = [NSString stringWithFormat:@"%d",studentID];
-    NSString *appendedURL = [surl stringByAppendingString:sID];
++ (NSMutableArray *)getTest:(int)bookID
+{
+    int thisBookID = bookID;
+    NSString *surl = @"http://spacecadets.cias.rit.edu/Application/mid.php?method=getQuestions&a=test&data=";
+    NSString *stringBookID = [NSString stringWithFormat:@"%d",thisBookID];
+    NSString *appendedURL = [surl stringByAppendingString:stringBookID];
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:appendedURL]];
     NSString *json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     NSMutableArray *results = [json JSONValue];
+    NSLog(@"results= %@", results);
     
-    int numStickers = [results count];
-    NSMutableArray *returnStickerBook = [[NSMutableArray alloc]init];
+   int allQuestionsCount = [results count];
     
-    //loop through each drawing student has (objectAtIndex)
-    for (int i=0; i < numStickers; i++) {
+    NSMutableArray *returnTest = [[NSMutableArray alloc]init];
+    
+    //loop through each question in test
+    for (int i=0; i < allQuestionsCount; i++) {
         NSMutableArray *tempArray = [[NSMutableArray alloc]init];
         
-        NSString *orientation = [[results objectAtIndex:i] valueForKey:@"orientation"];
-        NSString *placed = [[results objectAtIndex:i] valueForKey:@"placed"];
-        NSString *scale = [[results objectAtIndex:i] valueForKey:@"scale"];
-        NSString *stickerID = [[results objectAtIndex:i] valueForKey:@"stickerID"];
-        NSString *stickerName = [[results objectAtIndex:i] valueForKey:@"stickerName"];
-        NSString *xPos = [[results objectAtIndex:i] valueForKey:@"xPos"];
-        NSString *yPos = [[results objectAtIndex:i] valueForKey:@"yPos"];
+        NSString *questionType = [[results objectAtIndex:i] valueForKey:@"questionType"];
+        NSString *questionText = [[results objectAtIndex:i] valueForKey:@"questionText"];
+        NSString *answer = [[results objectAtIndex:i] valueForKey:@"answer"];
         
-        [tempArray addObject:(NSString *)orientation];
-        [tempArray addObject:(NSString *)placed];
-        [tempArray addObject:(NSURL *)scale];
-        [tempArray addObject:(NSString *)stickerID];
-        [tempArray addObject:(NSString *)stickerName];
-        [tempArray addObject:(NSString *)xPos];
-        [tempArray addObject:(NSString *)yPos];
+        NSLog(@"questionType = %@",questionType);
+        NSLog(@"questionText = %@",questionText);
+        NSLog(@"answer = %@",answer);
         
-        [returnStickerBook addObject:(NSMutableArray *)tempArray];
+        if ([questionType isEqualToString:@"mc"]) {
+            NSMutableArray *options = [[results objectAtIndex:i] valueForKey:@"options"];
+            [tempArray addObject:(NSMutableArray *)options];
+            NSLog(@"options = %@",options);
+        }
+        
+        [tempArray addObject:(NSString *)questionType];
+        [tempArray addObject:(NSString *)questionText];
+        [tempArray addObject:(NSString *)answer];
+        
+        [returnTest addObject:(NSMutableArray *)tempArray];
     }
     
-    return returnStickerBook;
+    return returnTest;
+    
 }
 
 + (void)editStickerBook:(int)studentID
