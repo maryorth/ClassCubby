@@ -14,7 +14,6 @@
 		3FA97D76167CEAF200039F44 /* TSCBookContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FA97D74167CEAF200039F44 /* TSCBookContentViewController.xib */; };
 		7A046C85169F5201001E2F6E /* TSCFillinBlanksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A046C83169F5201001E2F6E /* TSCFillinBlanksViewController.m */; };
 		7A046C86169F5201001E2F6E /* TSCFillinBlanksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A046C84169F5201001E2F6E /* TSCFillinBlanksViewController.xib */; };
-		7A31CCCD16864A660037E7E5 /* drawBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A31CCCC16864A660037E7E5 /* drawBG.jpg */; };
 		7A31CCD7168656BD0037E7E5 /* TSCBlankLetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31CCD5168656BD0037E7E5 /* TSCBlankLetterViewController.m */; };
 		7A31CCD8168656BD0037E7E5 /* TSCBlankLetterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A31CCD6168656BD0037E7E5 /* TSCBlankLetterViewController.xib */; };
 		7A547FBF166DA3E1000159B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A547FBE166DA3E1000159B7 /* UIKit.framework */; };
@@ -47,6 +46,9 @@
 		7AB137BF168C1A410049A6C5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB137BD168C1A410049A6C5 /* MainStoryboard.storyboard */; };
 		7AB137C81690B5500049A6C5 /* TSCMultChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB137C61690B5500049A6C5 /* TSCMultChoiceViewController.m */; };
 		7AB137C91690B5500049A6C5 /* TSCMultChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AB137C71690B5500049A6C5 /* TSCMultChoiceViewController.xib */; };
+		7AE6569D16A0C7CA0053F70C /* testblank.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE6569C16A0C7CA0053F70C /* testblank.png */; };
+		7AE656A016A0C82B0053F70C /* FIB.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AE6569E16A0C82B0053F70C /* FIB.jpg */; };
+		7AE656A116A0C82B0053F70C /* testBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7AE6569F16A0C82B0053F70C /* testBG.jpg */; };
 		7AF25546167290A600CF6BE6 /* TSCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF25545167290A600CF6BE6 /* TSCUtility.m */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +63,6 @@
 		7A046C82169F5201001E2F6E /* TSCFillinBlanksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCFillinBlanksViewController.h; sourceTree = "<group>"; };
 		7A046C83169F5201001E2F6E /* TSCFillinBlanksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCFillinBlanksViewController.m; sourceTree = "<group>"; };
 		7A046C84169F5201001E2F6E /* TSCFillinBlanksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSCFillinBlanksViewController.xib; sourceTree = "<group>"; };
-		7A31CCCC16864A660037E7E5 /* drawBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drawBG.jpg; sourceTree = "<group>"; };
 		7A31CCD4168656BD0037E7E5 /* TSCBlankLetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSCBlankLetterViewController.h; path = ../TSCBlankLetterViewController.h; sourceTree = "<group>"; };
 		7A31CCD5168656BD0037E7E5 /* TSCBlankLetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSCBlankLetterViewController.m; path = ../TSCBlankLetterViewController.m; sourceTree = "<group>"; };
 		7A31CCD6168656BD0037E7E5 /* TSCBlankLetterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TSCBlankLetterViewController.xib; path = ../TSCBlankLetterViewController.xib; sourceTree = "<group>"; };
@@ -116,6 +117,9 @@
 		7AB137C51690B5500049A6C5 /* TSCMultChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCMultChoiceViewController.h; sourceTree = "<group>"; };
 		7AB137C61690B5500049A6C5 /* TSCMultChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCMultChoiceViewController.m; sourceTree = "<group>"; };
 		7AB137C71690B5500049A6C5 /* TSCMultChoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSCMultChoiceViewController.xib; sourceTree = "<group>"; };
+		7AE6569C16A0C7CA0053F70C /* testblank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testblank.png; sourceTree = "<group>"; };
+		7AE6569E16A0C82B0053F70C /* FIB.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = FIB.jpg; path = ../FIB.jpg; sourceTree = "<group>"; };
+		7AE6569F16A0C82B0053F70C /* testBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = testBG.jpg; path = ../testBG.jpg; sourceTree = "<group>"; };
 		7AF25544167290A600CF6BE6 /* TSCUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCUtility.h; sourceTree = "<group>"; };
 		7AF25545167290A600CF6BE6 /* TSCUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,7 +195,9 @@
 				7A31CCD4168656BD0037E7E5 /* TSCBlankLetterViewController.h */,
 				7A31CCD5168656BD0037E7E5 /* TSCBlankLetterViewController.m */,
 				7A31CCD6168656BD0037E7E5 /* TSCBlankLetterViewController.xib */,
-				7A31CCCC16864A660037E7E5 /* drawBG.jpg */,
+				7AE6569E16A0C82B0053F70C /* FIB.jpg */,
+				7AE6569F16A0C82B0053F70C /* testBG.jpg */,
+				7AE6569C16A0C7CA0053F70C /* testblank.png */,
 				7AB137B2168B76830049A6C5 /* O.png */,
 				7AB137A8168B6A0D0049A6C5 /* N.png */,
 				7AB137A9168B6A0D0049A6C5 /* M.png */,
@@ -306,7 +312,6 @@
 				3FA97D76167CEAF200039F44 /* TSCBookContentViewController.xib in Resources */,
 				3F7A2C401680051D00C7CBA4 /* reading_page_background.png in Resources */,
 				3F7A2C491680092300C7CBA4 /* TSCProgressViewController.xib in Resources */,
-				7A31CCCD16864A660037E7E5 /* drawBG.jpg in Resources */,
 				7A31CCD8168656BD0037E7E5 /* TSCBlankLetterViewController.xib in Resources */,
 				7AB137AB168B6A0D0049A6C5 /* N.png in Resources */,
 				7AB137AC168B6A0D0049A6C5 /* M.png in Resources */,
@@ -314,6 +319,9 @@
 				7AB137BF168C1A410049A6C5 /* MainStoryboard.storyboard in Resources */,
 				7AB137C91690B5500049A6C5 /* TSCMultChoiceViewController.xib in Resources */,
 				7A046C86169F5201001E2F6E /* TSCFillinBlanksViewController.xib in Resources */,
+				7AE6569D16A0C7CA0053F70C /* testblank.png in Resources */,
+				7AE656A016A0C82B0053F70C /* FIB.jpg in Resources */,
+				7AE656A116A0C82B0053F70C /* testBG.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

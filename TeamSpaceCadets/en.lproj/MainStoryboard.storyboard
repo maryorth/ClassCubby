@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Cga-7E-7Fr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Cga-7E-7Fr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -39,7 +39,7 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="drawBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qiu-bW-1zy" userLabel="draw_bg"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="testBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qiu-bW-1zy" userLabel="test background"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -74,8 +74,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="drawBG.jpg" width="2048" height="1536"/>
         <image name="reading_page_background.png" width="2048" height="1536"/>
+        <image name="testBG.jpg" width="2048" height="1536"/>
     </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
