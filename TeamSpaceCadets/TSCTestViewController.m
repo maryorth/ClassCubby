@@ -67,7 +67,7 @@
         // ****** for fill-in-the-blanks questions: ****** //
         if (typeQuestion == @"fib") {
             int howManyBlanks = [correctAns length];
-            
+
             TSCFillinBlanksViewController *fillinBlanksView = [[TSCFillinBlanksViewController alloc] initWithQuestion:questionsString currentQuest:currentQuestion totalQuest:totalQuestions totalBlanks:howManyBlanks];
             [viewsArray addObject:fillinBlanksView];
         }
