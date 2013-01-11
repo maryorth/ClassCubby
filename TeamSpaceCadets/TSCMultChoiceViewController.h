@@ -10,9 +10,15 @@
 
 @interface TSCMultChoiceViewController : UIViewController
 - (IBAction)choiceSelected:(id)sender;
-- (UIView *)setupMultChoice;
 
-@property NSMutableDictionary *questionAndAnswers;
+- (id)initWithQuestion:(NSString *)questionTextStr
+          currentQuest:(int)currentQuestNum
+            totalQuest:(int)totalQuestNum
+           answer1Text:(NSString *)answer1
+           answer2Text:(NSString *)answer2
+           answer3Text:(NSString *)answer3
+     correctAnswerText:(NSString *)correctAnswer;
+
 @property NSString *answer1Txt;
 @property NSString *answer2Txt;
 @property NSString *answer3Txt;

@@ -82,6 +82,8 @@
     
    int allQuestionsCount = [results count];
     
+    NSLog(@"%@",results);
+    
     NSMutableArray *returnTest = [[NSMutableArray alloc]init];
     
     //loop through each question in test
@@ -109,7 +111,7 @@
         [returnTest addObject:(NSMutableArray *)tempArray];
     }
     
-    return returnTest;
+    return results;
     
 }
 

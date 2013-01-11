@@ -12,7 +12,7 @@
 @interface TSCUtility : NSObject
 + (NSMutableArray *)getProfile:(int)studentID;
 + (NSMutableArray *)getDrawings:(int)studentID;
-+ (NSMutableArray *)getStickerBook:(int)studentID;
+//+ (NSMutableArray *)getStickerBook:(int)studentID;
 + (void)editStickerBook:(int)studentID
              forSticker:(int)stickerID
               wasPlaced:(bool)didPlace
@@ -20,5 +20,5 @@
                   withY:(int)yPos
            stickerScale:(int)scale
      stickerOrientation:(int)orientation;
-+ (NSMutableArray *)getTest: (int)bookID;
++ (NSMutableArray *)getTest:(int)bookID;
 @end

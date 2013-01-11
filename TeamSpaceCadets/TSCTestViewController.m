@@ -51,24 +51,35 @@
     NSMutableArray *thisTest = [TSCUtility getTest:bookID];
     NSLog(@"getTest json results: %@", thisTest);
     
+    NSLog(@"option at index 0 = %@",[thisTest objectAtIndex:0]);
+    
     NSString *typeQuestion = @"fib";
     
     totalQuestions = [thisTest count];
     currentQuestion = 1; //need to increment when moving onto next question
-    NSString *questionsString = [thisTest objectAtIndex:1];
-    int howManyBlanks = [[thisTest objectAtIndex:3] length];
     
     //for loop goes thru each question
     for (int i=0; i<totalQuestions; i++) {
+        NSString *questionsString = [[thisTest objectAtIndex:i] valueForKey:@"questionText"];
+        NSString *correctAns = [[thisTest objectAtIndex:i] valueForKey:@"answer"];
+        
+        
         // ****** for fill-in-the-blanks questions: ****** //
         if (typeQuestion == @"fib") {
+            int howManyBlanks = [correctAns length];
+            
             TSCFillinBlanksViewController *fillinBlanksView = [[TSCFillinBlanksViewController alloc] initWithQuestion:questionsString currentQuest:currentQuestion totalQuest:totalQuestions totalBlanks:howManyBlanks];
             [viewsArray addObject:fillinBlanksView];
         }
         
         // ****** for multiple choice questions: ****** //
         else if (typeQuestion == @"mc") {
-            [viewsArray addObject:[TSCMultChoiceViewController setupMultChoice]];
+            NSString *ans1 = [[[thisTest objectAtIndex:i] valueForKey:@"options"] objectAtIndex:0];
+            NSString *ans2 = [[[thisTest objectAtIndex:i] valueForKey:@"options"] objectAtIndex:1];
+            NSString *ans3 = [[[thisTest objectAtIndex:i] valueForKey:@"options"] objectAtIndex:2];
+            
+            TSCMultChoiceViewController *multChoiceView = [[TSCMultChoiceViewController alloc] initWithQuestion:questionsString currentQuest:currentQuestion totalQuest:totalQuestions answer1Text:ans1 answer2Text:ans2 answer3Text:ans3 correctAnswerText:correctAns];
+            [viewsArray addObject:multChoiceView];
         }
     }
     

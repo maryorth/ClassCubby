@@ -40,8 +40,8 @@
         currentBlank = 0;
         totalBlanks = totalBlanksNum; //set dynamically when reading in data    
         
-        questionCounter.text = [NSString stringWithFormat:@"Question %d of %d", currentQuestNum, totalQuestNum];
-        questionText.text = whatQuestionStr;
+        [questionCounter setText:[NSString stringWithFormat:@"Question %d of %d", currentQuestNum, totalQuestNum]];
+        [questionText setText:whatQuestionStr];
         
         blanksArray = [[NSMutableArray alloc]init];
         [self answerBlanks];

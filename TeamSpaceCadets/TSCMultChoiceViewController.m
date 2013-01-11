@@ -13,13 +13,48 @@
 @end
 
 @implementation TSCMultChoiceViewController
-@synthesize correctNumber, answerLabelA, answerLabelB, answerLabelC, answerLabelD, chosenNumber, questionAndAnswers, answer1Txt, answer2Txt, answer3Txt, answer4Txt;
+@synthesize correctNumber, answerLabelA, answerLabelB, answerLabelC, answerLabelD, chosenNumber, answer1Txt, answer2Txt, answer3Txt, answer4Txt, questionText, questionCounter;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+    }
+    return self;
+}
+
+- (id)initWithQuestion:(NSString *)questionTextStr
+          currentQuest:(int)currentQuestNum
+            totalQuest:(int)totalQuestNum
+           answer1Text:(NSString *)answer1
+           answer2Text:(NSString *)answer2
+           answer3Text:(NSString *)answer3
+           correctAnswerText:(NSString *)correctAnswer
+{
+    self = [super initWithNibName:@"TSCMultChoiceViewController" bundle:nil];
+    if (self) {
+        [questionCounter setText:[NSString stringWithFormat:@"Question %d of %d", currentQuestNum, totalQuestNum]];
+        [questionText setText:questionTextStr];
+        NSMutableArray *answerArray;
+        
+        [answerArray addObject:answer1];
+        [answerArray addObject:answer2];
+        [answerArray addObject:answer3];
+        [answerArray addObject:correctAnswer];
+        
+        NSUInteger count = [answerArray count];
+        for (NSUInteger i = 0; i < count; ++i) {
+            // Select a random element between i and end of array to swap with.
+            NSInteger nElements = count - i;
+            NSInteger n = (arc4random() % nElements) + i;
+            [answerArray exchangeObjectAtIndex:i withObjectAtIndex:n];
+        }
+        
+        [answerLabelA setText:[answerArray objectAtIndex:0]];
+        [answerLabelB setText:[answerArray objectAtIndex:1]];
+        [answerLabelC setText:[answerArray objectAtIndex:2]];
+        [answerLabelD setText:[answerArray objectAtIndex:3]];
     }
     return self;
 }
@@ -39,27 +74,6 @@
 - (IBAction)choiceSelected:(id)sender {
     chosenNumber = [sender tag];
     NSLog(@"you chose number: %d", chosenNumber);
-}
-
-- (UIView *)setupMultChoice{
-    TSCMultChoiceViewController *multChoiceView = [[TSCMultChoiceViewController alloc] initWithNibName:@"TSCMultChoiceViewController" bundle: nil];
-    CGRect blankRect = CGRectMake(162, 261, 698, 368);
-    multChoiceView.view.frame = blankRect;
-    [self.view addSubview:multChoiceView.view];
-    
-    answer1Txt = @"Blue";
-    answer2Txt = @"Purple";
-    answer3Txt = @"Red";
-    answer4Txt = @"Green";
-    
-    whatQuestionAmI.text = [NSString stringWithFormat:@"Question %d of %d", currentQuestion, totalQuestions];
-    questionText.text = @"What color is the cape?";
-    [multChoiceView.answerLabelA setText:answer1Txt];
-    [multChoiceView.answerLabelB setText:answer2Txt];
-    [multChoiceView.answerLabelC setText:answer3Txt];
-    [multChoiceView.answerLabelD setText:answer4Txt];
-    
-    return multChoiceView.view;
 }
 
 @end

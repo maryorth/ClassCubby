@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TSCUtility.h"
 
 @interface TSCTestViewController : UIViewController
 

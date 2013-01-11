@@ -12,7 +12,12 @@
 
 - (IBAction)deletePressed:(id)sender;
 - (IBAction)letterPressed:(id)sender;
-- (UIView *)setupFillInBlanks:(int)blanksNum;
+
+
+- (id)initWithQuestion:(NSString *)whatQuestionStr
+          currentQuest:(int)currentQuestNum
+            totalQuest:(int)totalQuestNum
+           totalBlanks:(int)totalBlanksNum;
 
 @property int currentBlank;
 @property int totalBlanks;
