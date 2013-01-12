@@ -710,6 +710,7 @@
 						<string key="NSFrame">{{738, 521}, {115, 63}}</string>
 						<reference key="NSSuperview" ref="341779153"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>

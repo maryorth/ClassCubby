@@ -30,7 +30,7 @@
 @end
 
 @implementation TSCTestViewController
-@synthesize currentQuestion, totalQuestions, viewsArray;
+@synthesize currentQuestion, totalQuestions, viewsArray, pageViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -82,7 +82,6 @@
             [viewsArray addObject:multChoiceView];
         }
     }
-    
 }
 
 - (void)didReceiveMemoryWarning

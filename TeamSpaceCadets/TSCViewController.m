@@ -6,10 +6,6 @@
 //  Copyright (c) 2012 RIT Space Cadets. All rights reserved.
 //
 
-// TO DO
-// convert variables to ints (warnings?)
-// send in array for editStickerBook and append data to url
-
 #import "TSCViewController.h"
 #import "TSCUtility.h"
 

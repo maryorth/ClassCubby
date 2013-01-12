@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TSCTestViewController : UIViewController
+@interface TSCTestViewController : UIViewController <UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 
 @property NSMutableArray *viewsArray;
-
+@property (nonatomic, strong) UIPageViewController *pageViewController;
 @property int currentQuestion;
 @property int totalQuestions;
 
