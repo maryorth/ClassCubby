@@ -10,5 +10,7 @@
 
 @interface TSCBookContentViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *pageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pageCounter;
 @property (strong, nonatomic) NSString *labelContents;
+@property (strong, nonatomic) NSString *counterContents;
 @end

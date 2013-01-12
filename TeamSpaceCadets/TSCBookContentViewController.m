@@ -13,7 +13,7 @@
 @end
 
 @implementation TSCBookContentViewController
-@synthesize labelContents;
+@synthesize labelContents, counterContents;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.pageLabel.text = self.labelContents;
+    self.pageCounter.text = self.counterContents;
 }
 
 - (void)didReceiveMemoryWarning

@@ -14,7 +14,7 @@
 @end
 
 @implementation TSCViewController
-@synthesize modelArray, pageViewController, progressBar;
+@synthesize modelArray, pageViewController, progressBar, bookObject;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -31,11 +31,14 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    [self loadBookData:1];
+    
     //Instantiate a model array to keep page data in as well as the actual page view controller
     self.modelArray = [[NSMutableArray alloc] init];
-    for (int i=1;i<=10;i++){
-        [self.modelArray addObject:[NSString stringWithFormat:@"Page Number %d",i]];
-    }
+//    for (int i=1;i<=10;i++){
+//        [self.modelArray addObject:[NSString stringWithFormat:@"Page Number %d",i]];
+//    }
+    self.modelArray = [bookObject valueForKey:@"pages"];
     
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
@@ -43,7 +46,8 @@
     
     //Set up initial view controller
     TSCBookContentViewController *contentViewController = [[TSCBookContentViewController alloc] initWithNibName:@"TSCBookContentViewController" bundle:nil];
-    contentViewController.labelContents = [self.modelArray objectAtIndex:0];
+    contentViewController.labelContents = [self.bookObject valueForKey:@"title"];
+    contentViewController.counterContents = @"0";
     NSArray *viewControllers = [NSArray arrayWithObject:contentViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
@@ -71,31 +75,44 @@
     progressBar.view.frame = pbrect;
 }
 
+-(void)loadBookData:(int)bookID{
+    bookObject = [TSCUtility getBook:bookID];
+}
+
 #pragma mark - Delegate Methods for UIPageViewController
 
 -(UIViewController*)pageViewController:(UIPageViewController*)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    NSUInteger currentIndex = [self.modelArray indexOfObject:[(TSCBookContentViewController *)viewController labelContents]];
-    if(currentIndex == 0){
+    NSInteger currentIndex = [[(TSCBookContentViewController *)viewController counterContents] intValue];
+    if(currentIndex < 1){
         return nil;
     }
+    if(currentIndex == 1){
+        //Cover Here
+        TSCBookContentViewController *contentViewController = [[TSCBookContentViewController alloc] initWithNibName:@"TSCBookContentViewController" bundle:nil];
+        contentViewController.labelContents = [self.bookObject valueForKey:@"title"];
+        contentViewController.counterContents = @"0";
+        return contentViewController;
+    }
     TSCBookContentViewController *contentViewController = [[TSCBookContentViewController alloc] init];
-    contentViewController.labelContents = [self.modelArray objectAtIndex:currentIndex - 1];
-    progressBar.currentPage = currentIndex;
-    [progressBar setNewProgress];
+    contentViewController.counterContents = [NSString stringWithFormat:@"%@",[[self.modelArray objectAtIndex:currentIndex -2] valueForKey:@"pageNumber"]];
+    contentViewController.labelContents = [NSString stringWithFormat:@"%@",[[self.modelArray objectAtIndex:currentIndex -2] valueForKey:@"text"]];
+//    progressBar.currentPage = currentIndex;
+//    [progressBar setNewProgress];
     return contentViewController;
 }
 
 -(UIViewController*)pageViewController:(UIPageViewController*)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    NSUInteger currentIndex = [self.modelArray indexOfObject:[(TSCBookContentViewController *)viewController labelContents]];
-    if(currentIndex == [self.modelArray count] - 1){
+    NSInteger currentIndex = [[(TSCBookContentViewController *)viewController counterContents] intValue];
+    if(currentIndex > [self.modelArray count] - 1){
         return nil;
     }
     TSCBookContentViewController *contentViewController = [[TSCBookContentViewController alloc] init];
-    contentViewController.labelContents = [self.modelArray objectAtIndex:currentIndex + 1];
-    progressBar.currentPage = currentIndex + 2;
-    [progressBar setNewProgress];
+    contentViewController.counterContents = [NSString stringWithFormat:@"%@",[[self.modelArray objectAtIndex:currentIndex] valueForKey:@"pageNumber"]];
+    contentViewController.labelContents = [NSString stringWithFormat:@"%@",[[self.modelArray objectAtIndex:currentIndex] valueForKey:@"text"]];
+//    progressBar.currentPage = currentIndex + 2;
+//    [progressBar setNewProgress];
     return contentViewController;
 }
 

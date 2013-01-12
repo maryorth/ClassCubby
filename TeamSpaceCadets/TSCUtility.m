@@ -115,6 +115,20 @@
     
 }
 
++ (NSMutableArray *)getBook:(int)bookID
+{
+    int thisBookID = bookID;
+    NSString *surl = @"http://spacecadets.cias.rit.edu/Application/mid.php?method=getBook&a=book&data=";
+    NSString *stringBookID = [NSString stringWithFormat:@"%d",thisBookID];
+    NSString *appendedURL = [surl stringByAppendingString:stringBookID];
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:appendedURL]];
+    NSString *json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSMutableArray *results = [json JSONValue];
+    NSLog(@"results= %@", results);
+    
+    return results;
+}
+
 + (void)editStickerBook:(int)studentID
              forSticker:(int)stickerID
               wasPlaced:(bool)didPlace

@@ -17,5 +17,6 @@
 @property (nonatomic, strong) NSMutableArray *modelArray;
 
 @property TSCProgressViewController *progressBar;
+@property NSMutableArray *bookObject;
 
 @end
