@@ -12,6 +12,13 @@
 		3F7A2C491680092300C7CBA4 /* TSCProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7A2C471680092300C7CBA4 /* TSCProgressViewController.xib */; };
 		3FA97D75167CEAF200039F44 /* TSCBookContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA97D73167CEAF200039F44 /* TSCBookContentViewController.m */; };
 		3FA97D76167CEAF200039F44 /* TSCBookContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FA97D74167CEAF200039F44 /* TSCBookContentViewController.xib */; };
+		4C0B477816A20B6300118E8E /* vagrlsb_.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B477216A2090C00118E8E /* vagrlsb_.ttf */; };
+		4C0B477916A20B6300118E8E /* vagroun6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B477316A2090C00118E8E /* vagroun6.ttf */; };
+		4C0B477A16A20B6300118E8E /* vagrounded-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B477416A2090C00118E8E /* vagrounded-bold.ttf */; };
+		4C0B477B16A20B6300118E8E /* VAGRounded-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B477516A2090C00118E8E /* VAGRounded-Light.ttf */; };
+		4C0B477C16A20B6300118E8E /* vagroundedblacksskbold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B477616A2090C00118E8E /* vagroundedblacksskbold.ttf */; };
+		4C0B477F16A20FC500118E8E /* TSCCustomFontVAGRoundedLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B477E16A20FC500118E8E /* TSCCustomFontVAGRoundedLight.m */; };
+		4C0B478316A2170E00118E8E /* TSCCustomFontVAGRoundedBlackBold.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B478216A2170E00118E8E /* TSCCustomFontVAGRoundedBlackBold.m */; };
 		7A046C85169F5201001E2F6E /* TSCFillinBlanksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A046C83169F5201001E2F6E /* TSCFillinBlanksViewController.m */; };
 		7A046C86169F5201001E2F6E /* TSCFillinBlanksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A046C84169F5201001E2F6E /* TSCFillinBlanksViewController.xib */; };
 		7A31CCD7168656BD0037E7E5 /* TSCBlankLetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31CCD5168656BD0037E7E5 /* TSCBlankLetterViewController.m */; };
@@ -60,6 +67,15 @@
 		3FA97D72167CEAF200039F44 /* TSCBookContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCBookContentViewController.h; sourceTree = "<group>"; };
 		3FA97D73167CEAF200039F44 /* TSCBookContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCBookContentViewController.m; sourceTree = "<group>"; };
 		3FA97D74167CEAF200039F44 /* TSCBookContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSCBookContentViewController.xib; sourceTree = "<group>"; };
+		4C0B477216A2090C00118E8E /* vagrlsb_.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vagrlsb_.ttf; sourceTree = "<group>"; };
+		4C0B477316A2090C00118E8E /* vagroun6.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vagroun6.ttf; sourceTree = "<group>"; };
+		4C0B477416A2090C00118E8E /* vagrounded-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vagrounded-bold.ttf"; sourceTree = "<group>"; };
+		4C0B477516A2090C00118E8E /* VAGRounded-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = text; path = "VAGRounded-Light.ttf"; sourceTree = "<group>"; };
+		4C0B477616A2090C00118E8E /* vagroundedblacksskbold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vagroundedblacksskbold.ttf; sourceTree = "<group>"; };
+		4C0B477D16A20FC500118E8E /* TSCCustomFontVAGRoundedLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCCustomFontVAGRoundedLight.h; sourceTree = "<group>"; };
+		4C0B477E16A20FC500118E8E /* TSCCustomFontVAGRoundedLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCCustomFontVAGRoundedLight.m; sourceTree = "<group>"; };
+		4C0B478116A2170E00118E8E /* TSCCustomFontVAGRoundedBlackBold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCCustomFontVAGRoundedBlackBold.h; sourceTree = "<group>"; };
+		4C0B478216A2170E00118E8E /* TSCCustomFontVAGRoundedBlackBold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCCustomFontVAGRoundedBlackBold.m; sourceTree = "<group>"; };
 		7A046C82169F5201001E2F6E /* TSCFillinBlanksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCFillinBlanksViewController.h; sourceTree = "<group>"; };
 		7A046C83169F5201001E2F6E /* TSCFillinBlanksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCFillinBlanksViewController.m; sourceTree = "<group>"; };
 		7A046C84169F5201001E2F6E /* TSCFillinBlanksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSCFillinBlanksViewController.xib; sourceTree = "<group>"; };
@@ -138,6 +154,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C0B478016A20FD100118E8E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B478116A2170E00118E8E /* TSCCustomFontVAGRoundedBlackBold.h */,
+				4C0B478216A2170E00118E8E /* TSCCustomFontVAGRoundedBlackBold.m */,
+				4C0B477D16A20FC500118E8E /* TSCCustomFontVAGRoundedLight.h */,
+				4C0B477E16A20FC500118E8E /* TSCCustomFontVAGRoundedLight.m */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		7A547FAF166DA3E1000159B7 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +216,7 @@
 				3FA97D72167CEAF200039F44 /* TSCBookContentViewController.h */,
 				3FA97D73167CEAF200039F44 /* TSCBookContentViewController.m */,
 				3FA97D74167CEAF200039F44 /* TSCBookContentViewController.xib */,
+				4C0B478016A20FD100118E8E /* Fonts */,
 				3F7A2C451680092300C7CBA4 /* TSCProgressViewController.h */,
 				3F7A2C461680092300C7CBA4 /* TSCProgressViewController.m */,
 				3F7A2C471680092300C7CBA4 /* TSCProgressViewController.xib */,
@@ -209,6 +237,11 @@
 		7A547FC5166DA3E1000159B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C0B477216A2090C00118E8E /* vagrlsb_.ttf */,
+				4C0B477316A2090C00118E8E /* vagroun6.ttf */,
+				4C0B477416A2090C00118E8E /* vagrounded-bold.ttf */,
+				4C0B477516A2090C00118E8E /* VAGRounded-Light.ttf */,
+				4C0B477616A2090C00118E8E /* vagroundedblacksskbold.ttf */,
 				3F7A2C3F1680051D00C7CBA4 /* reading_page_background.png */,
 				7A547FC6166DA3E1000159B7 /* TeamSpaceCadets-Info.plist */,
 				7A547FC7166DA3E1000159B7 /* InfoPlist.strings */,
@@ -305,6 +338,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0B477816A20B6300118E8E /* vagrlsb_.ttf in Resources */,
+				4C0B477916A20B6300118E8E /* vagroun6.ttf in Resources */,
+				4C0B477A16A20B6300118E8E /* vagrounded-bold.ttf in Resources */,
+				4C0B477B16A20B6300118E8E /* VAGRounded-Light.ttf in Resources */,
+				4C0B477C16A20B6300118E8E /* vagroundedblacksskbold.ttf in Resources */,
 				7A547FC9166DA3E1000159B7 /* InfoPlist.strings in Resources */,
 				7A547FD1166DA3E1000159B7 /* Default.png in Resources */,
 				7A547FD3166DA3E1000159B7 /* Default@2x.png in Resources */,
@@ -355,6 +393,8 @@
 				7A31CCD7168656BD0037E7E5 /* TSCBlankLetterViewController.m in Sources */,
 				7AB137C81690B5500049A6C5 /* TSCMultChoiceViewController.m in Sources */,
 				7A046C85169F5201001E2F6E /* TSCFillinBlanksViewController.m in Sources */,
+				4C0B477F16A20FC500118E8E /* TSCCustomFontVAGRoundedLight.m in Sources */,
+				4C0B478316A2170E00118E8E /* TSCCustomFontVAGRoundedBlackBold.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

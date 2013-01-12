@@ -30,6 +30,14 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>vagrlsb_.ttf</string>
+		<string>vagroun6.ttf</string>
+		<string>vagrounded-bold.ttf</string>
+		<string>VAGRounded-Light.ttf</string>
+		<string>vagroundedblacksskbold.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationLandscapeRight</string>
