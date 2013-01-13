@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TSCDrawingToolsDockViewController.h"
 
 @interface TSCDrawViewController : UIViewController
 
+@property TSCDrawingToolsDockViewController *toolsDock;
 
 @end

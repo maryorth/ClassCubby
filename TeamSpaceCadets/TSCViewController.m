@@ -8,6 +8,7 @@
 
 #import "TSCViewController.h"
 #import "TSCUtility.h"
+#import "TSCDrawViewController.h"
 
 @interface TSCViewController ()
 
@@ -107,6 +108,9 @@
 {
     NSInteger currentIndex = [[(TSCBookContentViewController *)viewController counterContents] intValue];
     if(currentIndex > [self.modelArray count] - 1){
+        [self.view removeFromSuperview];
+        TSCDrawViewController *drawView = [[TSCDrawViewController alloc] init];
+        [self.view addSubview:drawView.view];
         return nil;
     }
     TSCBookContentViewController *contentViewController = [[TSCBookContentViewController alloc] init];

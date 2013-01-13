@@ -7,12 +7,14 @@
 //
 
 #import "TSCDrawViewController.h"
+#import "TSCDrawingToolsDockViewController.h"
 
 @interface TSCDrawViewController ()
 
 @end
 
 @implementation TSCDrawViewController
+@synthesize toolsDock;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +29,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    // Add tools dock
+    self.toolsDock = [[TSCDrawingToolsDockViewController alloc] initWithNibName:@"TSCDrawingToolsDockViewController" bundle:nil];
+    [self.view addSubview:toolsDock.view];
+    
+    // Position tools dock
+    CGRect dockViewRect = CGRectMake(0.0, 705.0, 800.0, 500.0);
+    toolsDock.view.frame = dockViewRect;
 }
 
 - (void)didReceiveMemoryWarning
