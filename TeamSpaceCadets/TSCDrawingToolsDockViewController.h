@@ -10,6 +10,8 @@
 
 @interface TSCDrawingToolsDockViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *toolsArrow;
+
 @property bool isOpened;
 
 @end

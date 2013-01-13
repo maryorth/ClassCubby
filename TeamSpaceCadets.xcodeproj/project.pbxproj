@@ -29,7 +29,8 @@
 		4CB7C67F16A33D1100B4C41B /* read-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB7C67E16A33D1100B4C41B /* read-btn.png */; };
 		4CB7C68516A341A100B4C41B /* TSCDrawingToolsDockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7C68316A341A100B4C41B /* TSCDrawingToolsDockViewController.m */; };
 		4CB7C68616A341A100B4C41B /* TSCDrawingToolsDockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB7C68416A341A100B4C41B /* TSCDrawingToolsDockViewController.xib */; };
-		4CB7C68816A3428600B4C41B /* drawing-tools-dock.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB7C68716A3428600B4C41B /* drawing-tools-dock.png */; };
+		4CB7C68A16A34DB300B4C41B /* drawing-tools-dock.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB7C68916A34DB300B4C41B /* drawing-tools-dock.png */; };
+		4CB7C68C16A34E4900B4C41B /* tools-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CB7C68B16A34E4900B4C41B /* tools-arrow.png */; };
 		7A046C85169F5201001E2F6E /* TSCFillinBlanksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A046C83169F5201001E2F6E /* TSCFillinBlanksViewController.m */; };
 		7A046C86169F5201001E2F6E /* TSCFillinBlanksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A046C84169F5201001E2F6E /* TSCFillinBlanksViewController.xib */; };
 		7A31CCD7168656BD0037E7E5 /* TSCBlankLetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A31CCD5168656BD0037E7E5 /* TSCBlankLetterViewController.m */; };
@@ -98,7 +99,8 @@
 		4CB7C68216A341A100B4C41B /* TSCDrawingToolsDockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCDrawingToolsDockViewController.h; sourceTree = "<group>"; };
 		4CB7C68316A341A100B4C41B /* TSCDrawingToolsDockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCDrawingToolsDockViewController.m; sourceTree = "<group>"; };
 		4CB7C68416A341A100B4C41B /* TSCDrawingToolsDockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSCDrawingToolsDockViewController.xib; sourceTree = "<group>"; };
-		4CB7C68716A3428600B4C41B /* drawing-tools-dock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drawing-tools-dock.png"; sourceTree = "<group>"; };
+		4CB7C68916A34DB300B4C41B /* drawing-tools-dock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drawing-tools-dock.png"; sourceTree = "<group>"; };
+		4CB7C68B16A34E4900B4C41B /* tools-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tools-arrow.png"; sourceTree = "<group>"; };
 		7A046C82169F5201001E2F6E /* TSCFillinBlanksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCFillinBlanksViewController.h; sourceTree = "<group>"; };
 		7A046C83169F5201001E2F6E /* TSCFillinBlanksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCFillinBlanksViewController.m; sourceTree = "<group>"; };
 		7A046C84169F5201001E2F6E /* TSCFillinBlanksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSCFillinBlanksViewController.xib; sourceTree = "<group>"; };
@@ -263,7 +265,8 @@
 		7A547FC5166DA3E1000159B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4CB7C68716A3428600B4C41B /* drawing-tools-dock.png */,
+				4CB7C68B16A34E4900B4C41B /* tools-arrow.png */,
+				4CB7C68916A34DB300B4C41B /* drawing-tools-dock.png */,
 				4CB7C67E16A33D1100B4C41B /* read-btn.png */,
 				4CB7C67C16A33C7400B4C41B /* draw-btn-selected.png */,
 				4CB7C67A16A33BA900B4C41B /* drawing-page-background.png */,
@@ -404,7 +407,8 @@
 				4CB7C67D16A33C7400B4C41B /* draw-btn-selected.png in Resources */,
 				4CB7C67F16A33D1100B4C41B /* read-btn.png in Resources */,
 				4CB7C68616A341A100B4C41B /* TSCDrawingToolsDockViewController.xib in Resources */,
-				4CB7C68816A3428600B4C41B /* drawing-tools-dock.png in Resources */,
+				4CB7C68A16A34DB300B4C41B /* drawing-tools-dock.png in Resources */,
+				4CB7C68C16A34E4900B4C41B /* tools-arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

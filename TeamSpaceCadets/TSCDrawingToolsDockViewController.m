@@ -14,7 +14,7 @@
 
 @implementation TSCDrawingToolsDockViewController
 
-@synthesize isOpened;
+@synthesize isOpened,toolsArrow;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +33,9 @@
     //Set isOpened to false;
     isOpened = false;
     
+    //Set tools arrow orientation
+    toolsArrow.transform = CGAffineTransformMakeRotation(M_PI);
+    
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
     [self.view addGestureRecognizer:singleTap];
 }
@@ -50,6 +53,9 @@
         [UIView commitAnimations];
         
         isOpened = true;
+        
+        //Set tools arrow orientation
+        toolsArrow.transform = CGAffineTransformMakeRotation(0);
     } else {
         [UIView beginAnimations:nil context:nil];
         [UIView setAnimationDuration:0.4];
@@ -62,6 +68,8 @@
         [UIView commitAnimations];
         
         isOpened = false;
+        //Set tools arrow orientation
+        toolsArrow.transform = CGAffineTransformMakeRotation(M_PI);
     }
 }
 
