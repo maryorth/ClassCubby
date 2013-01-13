@@ -18,5 +18,6 @@
 
 @property TSCProgressViewController *progressBar;
 @property NSMutableArray *bookObject;
+@property int pageCount;
 
 @end

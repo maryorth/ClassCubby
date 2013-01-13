@@ -12,15 +12,79 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="reading_page_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="ApS-6C-uqf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="read-window-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="ApS-6C-uqf">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1N-UA-UaL">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="kHp-rH-yom"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="test-btn.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="nav-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dsx-RR-KWV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="D49-eo-CyR"/>
+                                    <constraint firstAttribute="width" constant="9" id="ID5-PW-8KJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="nav-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="hP4-7S-k04">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="9" id="jYx-9t-cP0"/>
+                                    <constraint firstAttribute="height" constant="16" id="o0F-yY-mge"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGl-xf-gbF">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Wb2-EG-BDm"/>
+                                    <constraint firstAttribute="height" constant="65" id="ybX-pK-jVn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="read-btn-selected.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJC-Jr-Eid">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="n5m-9H-cFK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="draw-btn.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SGl-xf-gbF" secondAttribute="bottom" constant="7" id="55o-c0-oKe"/>
+                            <constraint firstItem="vJC-Jr-Eid" firstAttribute="top" secondItem="SGl-xf-gbF" secondAttribute="top" type="default" id="GC4-JE-QsN"/>
+                            <constraint firstAttribute="bottom" secondItem="hP4-7S-k04" secondAttribute="bottom" constant="35" id="Jt4-N1-965"/>
+                            <constraint firstItem="e1N-UA-UaL" firstAttribute="bottom" secondItem="vJC-Jr-Eid" secondAttribute="bottom" type="default" id="Lyz-FW-roP"/>
+                            <constraint firstItem="e1N-UA-UaL" firstAttribute="top" secondItem="vJC-Jr-Eid" secondAttribute="top" type="default" id="Nrt-cv-6KQ"/>
+                            <constraint firstItem="SGl-xf-gbF" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="260" id="PbX-7Z-MSM"/>
+                            <constraint firstAttribute="trailing" secondItem="hP4-7S-k04" secondAttribute="trailing" constant="415" id="Xl8-Od-oFj"/>
                             <constraint firstItem="ApS-6C-uqf" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="ZSE-xh-mRW"/>
+                            <constraint firstItem="vJC-Jr-Eid" firstAttribute="bottom" secondItem="SGl-xf-gbF" secondAttribute="bottom" type="default" id="Zbh-Mk-sct"/>
                             <constraint firstItem="ApS-6C-uqf" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="aIb-3H-cMu"/>
+                            <constraint firstItem="Dsx-RR-KWV" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="417" id="jYK-gm-enH"/>
                             <constraint firstItem="ApS-6C-uqf" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="jhr-Lq-CNA"/>
+                            <constraint firstAttribute="bottom" secondItem="Dsx-RR-KWV" secondAttribute="bottom" constant="36" id="ofz-9b-8Pc"/>
+                            <constraint firstItem="vJC-Jr-Eid" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="443" id="ufx-9F-tqW"/>
+                            <constraint firstAttribute="trailing" secondItem="e1N-UA-UaL" secondAttribute="trailing" constant="259" id="vWz-PV-Pmm"/>
                             <constraint firstItem="ApS-6C-uqf" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="yTj-6z-gGy"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -74,7 +138,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="reading_page_background.png" width="2048" height="1536"/>
+        <image name="draw-btn.png" width="279" height="132"/>
+        <image name="nav-arrow.png" width="16" height="27"/>
+        <image name="read-btn-selected.png" width="275" height="130"/>
+        <image name="read-window-background.png" width="2048" height="1536"/>
+        <image name="test-btn.png" width="276" height="138"/>
         <image name="testBG.jpg" width="2048" height="1536"/>
     </resources>
     <classes>

@@ -14,7 +14,7 @@
 @end
 
 @implementation TSCViewController
-@synthesize modelArray, pageViewController, progressBar, bookObject;
+@synthesize modelArray, pageViewController, progressBar, bookObject, pageCount;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -39,6 +39,7 @@
 //        [self.modelArray addObject:[NSString stringWithFormat:@"Page Number %d",i]];
 //    }
     self.modelArray = [bookObject valueForKey:@"pages"];
+    pageCount = [modelArray count];
     
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
@@ -47,7 +48,7 @@
     //Set up initial view controller
     TSCBookContentViewController *contentViewController = [[TSCBookContentViewController alloc] initWithNibName:@"TSCBookContentViewController" bundle:nil];
     contentViewController.labelContents = [self.bookObject valueForKey:@"title"];
-    contentViewController.counterContents = @"0";
+    contentViewController.counterContents = [NSString stringWithFormat:@"0/%u",pageCount];
     NSArray *viewControllers = [NSArray arrayWithObject:contentViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
@@ -65,14 +66,14 @@
     self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
     
     
-    //Set Progress bar
-    progressBar = [[TSCProgressViewController alloc] init];
-    [self.view addSubview:progressBar.view];
-    progressBar.currentPage = 1;
-    progressBar.numPages = 10;
-    [progressBar setNewProgress];
-    CGRect pbrect = CGRectMake(260.0, 680.0, 200.0, 53.0);
-    progressBar.view.frame = pbrect;
+//    //Set Progress bar
+//    progressBar = [[TSCProgressViewController alloc] init];
+//    [self.view addSubview:progressBar.view];
+//    progressBar.currentPage = 1;
+//    progressBar.numPages = 10;
+//    [progressBar setNewProgress];
+//    CGRect pbrect = CGRectMake(260.0, 680.0, 200.0, 53.0);
+//    progressBar.view.frame = pbrect;
 }
 
 -(void)loadBookData:(int)bookID{
@@ -91,11 +92,11 @@
         //Cover Here
         TSCBookContentViewController *contentViewController = [[TSCBookContentViewController alloc] initWithNibName:@"TSCBookContentViewController" bundle:nil];
         contentViewController.labelContents = [self.bookObject valueForKey:@"title"];
-        contentViewController.counterContents = @"0";
+        contentViewController.counterContents = [NSString stringWithFormat:@"0/%u",pageCount];;
         return contentViewController;
     }
     TSCBookContentViewController *contentViewController = [[TSCBookContentViewController alloc] init];
-    contentViewController.counterContents = [NSString stringWithFormat:@"%@",[[self.modelArray objectAtIndex:currentIndex -2] valueForKey:@"pageNumber"]];
+    contentViewController.counterContents = [NSString stringWithFormat:@"%@/%u",[[self.modelArray objectAtIndex:currentIndex -2] valueForKey:@"pageNumber"],pageCount];
     contentViewController.labelContents = [NSString stringWithFormat:@"%@",[[self.modelArray objectAtIndex:currentIndex -2] valueForKey:@"text"]];
 //    progressBar.currentPage = currentIndex;
 //    [progressBar setNewProgress];
@@ -109,7 +110,7 @@
         return nil;
     }
     TSCBookContentViewController *contentViewController = [[TSCBookContentViewController alloc] init];
-    contentViewController.counterContents = [NSString stringWithFormat:@"%@",[[self.modelArray objectAtIndex:currentIndex] valueForKey:@"pageNumber"]];
+    contentViewController.counterContents = [NSString stringWithFormat:@"%@/%u",[[self.modelArray objectAtIndex:currentIndex] valueForKey:@"pageNumber"],pageCount];
     contentViewController.labelContents = [NSString stringWithFormat:@"%@",[[self.modelArray objectAtIndex:currentIndex] valueForKey:@"text"]];
 //    progressBar.currentPage = currentIndex + 2;
 //    [progressBar setNewProgress];
