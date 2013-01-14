@@ -17,7 +17,8 @@
 - (id)initWithQuestion:(NSString *)whatQuestionStr
           currentQuest:(int)currentQuestNum
             totalQuest:(int)totalQuestNum
-           totalBlanks:(int)totalBlanksNum;
+           totalBlanks:(int)totalBlanksNum
+                answer:(NSString *)theAnswer;
 
 @property int currentBlank;
 @property int totalBlanks;
@@ -25,5 +26,8 @@
 @property NSMutableArray *chosenLetters;
 @property (strong, nonatomic) IBOutlet UILabel *questionCounter;
 @property (strong, nonatomic) IBOutlet UILabel *questionText;
+@property NSString *questionTexttoSet;
+@property NSString *questionNumberingtoSet;
+@property NSString *rightAnswer;
 
 @end
