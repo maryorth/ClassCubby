@@ -94,7 +94,6 @@
 		7A6B2FD116A3B73A00F335DC /* test-btn-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A6B2FD016A3B73A00F335DC /* test-btn-selected.png */; };
 		7A6B2FD316A3B7C800F335DC /* test-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A6B2FD216A3B7C800F335DC /* test-btn.png */; };
 		7A6B2FD716A3BF3C00F335DC /* read-btn-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A6B2FD616A3BF3C00F335DC /* read-btn-selected.png */; };
-		7A6B2FD916A3BF9300F335DC /* read-btn-select.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A6B2FD816A3BF9300F335DC /* read-btn-select.png */; };
 		7A94267916811AEF00457162 /* TSCDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A94267816811AEF00457162 /* TSCDrawViewController.m */; };
 		7A94267D16811B3E00457162 /* TSCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A94267C16811B3E00457162 /* TSCTestViewController.m */; };
 		7AB137BF168C1A410049A6C5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB137BD168C1A410049A6C5 /* MainStoryboard.storyboard */; };
@@ -216,7 +215,6 @@
 		7A6B2FD016A3B73A00F335DC /* test-btn-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test-btn-selected.png"; sourceTree = "<group>"; };
 		7A6B2FD216A3B7C800F335DC /* test-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test-btn.png"; sourceTree = "<group>"; };
 		7A6B2FD616A3BF3C00F335DC /* read-btn-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "read-btn-selected.png"; sourceTree = "<group>"; };
-		7A6B2FD816A3BF9300F335DC /* read-btn-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "read-btn-select.png"; sourceTree = "<group>"; };
 		7A94267716811AEE00457162 /* TSCDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCDrawViewController.h; sourceTree = "<group>"; };
 		7A94267816811AEF00457162 /* TSCDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCDrawViewController.m; sourceTree = "<group>"; };
 		7A94267B16811B3E00457162 /* TSCTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCTestViewController.h; sourceTree = "<group>"; };
@@ -337,7 +335,6 @@
 				4CB7C68916A34DB300B4C41B /* drawing-tools-dock.png */,
 				4CB7C67E16A33D1100B4C41B /* read-btn.png */,
 				7A6B2FD616A3BF3C00F335DC /* read-btn-selected.png */,
-				7A6B2FD816A3BF9300F335DC /* read-btn-select.png */,
 				7A6B2FCE16A3B69000F335DC /* draw-btn.png */,
 				4CB7C67C16A33C7400B4C41B /* draw-btn-selected.png */,
 				7A6B2FD216A3B7C800F335DC /* test-btn.png */,
@@ -544,7 +541,6 @@
 				7A6B2FD116A3B73A00F335DC /* test-btn-selected.png in Resources */,
 				7A6B2FD316A3B7C800F335DC /* test-btn.png in Resources */,
 				7A6B2FD716A3BF3C00F335DC /* read-btn-selected.png in Resources */,
-				7A6B2FD916A3BF9300F335DC /* read-btn-select.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
