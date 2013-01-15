@@ -88,7 +88,7 @@
     vector.y /= distance;
     for (CGFloat i = 0; i < distance; i += 1.0f) {
         CGPoint p = CGPointMake(lastPoint.x + i * vector.x, lastPoint.y + i * vector.y);
-        [texture drawAtPoint:p blendMode:kCGBlendModeNormal alpha:0.5f];
+        [texture drawAtPoint:p blendMode:kCGBlendModeNormal alpha:1.0f];
     }
     
     //comment block below to enable texture brush.
@@ -130,12 +130,20 @@
         //attempting to add a texture --
         //CGContextSetStrokeColorWithColor(UIGraphicsGetCurrentContext(), strokeColor);
         //CGContextSetFillColorWithColor(UIGraphicsGetCurrentContext(), fillColor);
-        
-        CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
-        CGContextSetLineWidth(UIGraphicsGetCurrentContext(), toolsDock.brush);
-        CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), toolsDock.red, toolsDock.green, toolsDock.blue, toolsDock.opacity);
-        CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
-        CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
+        UIImage *textureStandAlone = toolsDock.texture;
+        //CGPoint vector = CGPointMake(lastPoint.x,lastPoint.y);
+        //CGFloat distance = hypotf(vector.x, vector.y);
+        //vector.x /= distance;
+        //vector.y /= distance;
+       
+           CGPoint p = CGPointMake(lastPoint.x, lastPoint.y);
+            [textureStandAlone drawAtPoint:p blendMode:kCGBlendModeNormal alpha:1.0f];
+
+        //CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
+        //CGContextSetLineWidth(UIGraphicsGetCurrentContext(), toolsDock.brush);
+        //CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), toolsDock.red, toolsDock.green, toolsDock.blue, toolsDock.opacity);
+        //CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
+        //CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
         CGContextStrokePath(UIGraphicsGetCurrentContext());
         CGContextFlush(UIGraphicsGetCurrentContext());
         self.tempDrawImage.image = UIGraphicsGetImageFromCurrentImageContext();

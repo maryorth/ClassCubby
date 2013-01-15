@@ -14,7 +14,7 @@
 
 @implementation TSCDrawingToolsDockViewController
 
-@synthesize isOpened,toolsArrow, redButton, yellowButton, tealButton, lightblueButton, pinkButton, brownButton, greyButton, orangeButton, greenButton, blueButton, purpleButton, tanButton, whiteButton, blackButton, brushButton, penButton, pencilButton, red, green, blue, brush, opacity, texture;
+@synthesize isOpened,toolsArrow, redButton, yellowButton, tealButton, lightblueButton, pinkButton, brownButton, greyButton, orangeButton, greenButton, blueButton, purpleButton, tanButton, whiteButton, blackButton, brushButton, penButton, pencilButton, red, green, blue, brush, opacity, texture, textureName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -50,16 +50,20 @@
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
     [self.view addGestureRecognizer:singleTap];
     
-    texture = [UIImage imageNamed:@"pattern.png"];
+    texture = [UIImage imageNamed:@"brushBlack.png"];
+    textureName = @"brush";
+    
 }
 - (IBAction)brushSelected:(id)sender{
     
     //set to brush
     
-    texture = [UIImage imageNamed:@"pattern.png"];
+    texture = [UIImage imageNamed:@"brushBlack.png"];
+    textureName = @"brush";
 }
 - (IBAction)pencilSelected:(id)sender{
-    texture = [UIImage imageNamed:@"pattern2.png"];
+    texture = [UIImage imageNamed:@"pencilBlack.png"];
+     textureName = @"pencil";
 }
 - (IBAction)penSelected:(id)sender{
     texture = [UIImage imageNamed:@"pattern3.png"];
@@ -97,7 +101,7 @@
     }
 }
 
-- (void)updateTextureWithColor{
+/*- (void)updateTextureWithColor{
     
     // load the image
     //NSString *name = @"badge.png";
@@ -135,7 +139,7 @@
     //set texture to colored image
     //return coloredImg;
     texture = coloredImg;
-}
+}*/
 
 //changing color
 - (IBAction)colorSelected:(id)sender {
@@ -146,90 +150,132 @@
     {
             //red
         case 0:
-            red = 220.0/255.0;
-            green = 40.0/255.0;
-            blue = 58.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushRed.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilRed.png"];
+            }
             break;
             //yelow
         case 1:
-            red = 244.0/255.0;
-            green = 200.0/255.0;
-            blue = 26.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushYellow.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilYellow.png"];
+            }
             break;
             //teal
         case 2:
-            red = 0.0/255.0;
-            green = 216.0/255.0;
-            blue = 182.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushTeal.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilTeal.png"];
+            }
             break;
             //lightblue
         case 3:
-            red = 45.0/255.0;
-            green = 189.0/255.0;
-            blue = 231.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushLightBlue.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilLightBlue.png"];
+            }
             break;
             //pink
         case 4:
-            red = 229.0/255.0;
-            green = 87.0/255.0;
-            blue = 171.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushPink.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilPink.png"];
+            }
             break;
             //brown
         case 5:
-            red = 166.0/255.0;
-            green = 109.0/255.0;
-            blue = 77.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushBrown.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilBrown.png"];
+            }
             break;
             //grey
         case 6:
-            red = 122.0/255.0;
-            green = 122.0/255.0;
-            blue = 122.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushGrey.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilGrey.png"];
+            }
             break;
             //orange
         case 7:
-            red = 255.0/255.0;
-            green = 109.0/255.0;
-            blue = 39.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushOrange.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilOrange.png"];
+            }
             break;
             //green
         case 8:
-            red = 24.0/255.0;
-            green = 155.0/255.0;
-            blue = 42.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushGreen.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilGreen.png"];
+            }
             break;
             //darkblue
         case 9:
-            red = 0.0/255.0;
-            green = 79.0/255.0;
-            blue = 156.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushDarkBlue.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilDarkBlue.png"];
+            }
             break;
             //purple
         case 10:
-            red = 149.0/255.0;
-            green = 66.0/255.0;
-            blue = 211.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushPurple.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilPurple.png"];
+            }
             break;
             //tan
         case 11:
-            red = 238.0/255.0;
-            green = 196.0/255.0;
-            blue = 161.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushTan.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilTan.png"];
+            }
             break;
             //white
         case 12:
-            red = 255.0/255.0;
-            green = 255.0/255.0;
-            blue = 255.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushWhite.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilWhite.png"];
+            }
             break;
             //black
         case 13:
-            red = 0.0/255.0;
-            green = 0.0/255.0;
-            blue = 0.0/255.0;
+            if (textureName == @"brush") {
+                texture = [UIImage imageNamed:@"brushBlack.png"];
+            }
+            if (textureName == @"pencil") {
+                texture = [UIImage imageNamed:@"pencilBlack.png"];
+            }
             break;
     }
-    [self updateTextureWithColor];
+    //[self updateTextureWithColor];
 }
 
 - (void)didReceiveMemoryWarning

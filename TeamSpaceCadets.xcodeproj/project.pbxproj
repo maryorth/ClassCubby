@@ -120,6 +120,34 @@
 		FBCDE2DE16A4D503008D9946 /* tealButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FBCDE2CA16A4D503008D9946 /* tealButton.png */; };
 		FBCDE2DF16A4D503008D9946 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FBCDE2CB16A4D503008D9946 /* whiteButton.png */; };
 		FBCDE2E016A4D503008D9946 /* yellowButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FBCDE2CC16A4D503008D9946 /* yellowButton.png */; };
+		FBDF1AAF16A4E1F200172E86 /* brushBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9316A4E1F200172E86 /* brushBlack.png */; };
+		FBDF1AB016A4E1F200172E86 /* brushBrown.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9416A4E1F200172E86 /* brushBrown.png */; };
+		FBDF1AB116A4E1F200172E86 /* brushDarkBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9516A4E1F200172E86 /* brushDarkBlue.png */; };
+		FBDF1AB216A4E1F200172E86 /* brushGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9616A4E1F200172E86 /* brushGreen.png */; };
+		FBDF1AB316A4E1F200172E86 /* brushGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9716A4E1F200172E86 /* brushGrey.png */; };
+		FBDF1AB416A4E1F200172E86 /* brushLightBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9816A4E1F200172E86 /* brushLightBlue.png */; };
+		FBDF1AB516A4E1F200172E86 /* brushOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9916A4E1F200172E86 /* brushOrange.png */; };
+		FBDF1AB616A4E1F200172E86 /* brushPink.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9A16A4E1F200172E86 /* brushPink.png */; };
+		FBDF1AB716A4E1F200172E86 /* brushPurple.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9B16A4E1F200172E86 /* brushPurple.png */; };
+		FBDF1AB816A4E1F200172E86 /* brushRed.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9C16A4E1F200172E86 /* brushRed.png */; };
+		FBDF1AB916A4E1F200172E86 /* brushTan.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9D16A4E1F200172E86 /* brushTan.png */; };
+		FBDF1ABA16A4E1F200172E86 /* brushTeal.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9E16A4E1F200172E86 /* brushTeal.png */; };
+		FBDF1ABB16A4E1F200172E86 /* brushWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1A9F16A4E1F200172E86 /* brushWhite.png */; };
+		FBDF1ABC16A4E1F200172E86 /* brushYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AA016A4E1F200172E86 /* brushYellow.png */; };
+		FBDF1ABD16A4E1F200172E86 /* pencilBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AA116A4E1F200172E86 /* pencilBlack.png */; };
+		FBDF1ABE16A4E1F200172E86 /* pencilBrown.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AA216A4E1F200172E86 /* pencilBrown.png */; };
+		FBDF1ABF16A4E1F200172E86 /* pencilDarkBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AA316A4E1F200172E86 /* pencilDarkBlue.png */; };
+		FBDF1AC016A4E1F200172E86 /* pencilGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AA416A4E1F200172E86 /* pencilGreen.png */; };
+		FBDF1AC116A4E1F200172E86 /* pencilGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AA516A4E1F200172E86 /* pencilGrey.png */; };
+		FBDF1AC216A4E1F200172E86 /* pencilLightBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AA616A4E1F200172E86 /* pencilLightBlue.png */; };
+		FBDF1AC316A4E1F200172E86 /* pencilOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AA716A4E1F200172E86 /* pencilOrange.png */; };
+		FBDF1AC416A4E1F200172E86 /* pencilPink.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AA816A4E1F200172E86 /* pencilPink.png */; };
+		FBDF1AC516A4E1F200172E86 /* pencilPurple.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AA916A4E1F200172E86 /* pencilPurple.png */; };
+		FBDF1AC616A4E1F200172E86 /* pencilRed.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AAA16A4E1F200172E86 /* pencilRed.png */; };
+		FBDF1AC716A4E1F200172E86 /* pencilTan.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AAB16A4E1F200172E86 /* pencilTan.png */; };
+		FBDF1AC816A4E1F200172E86 /* pencilTeal.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AAC16A4E1F200172E86 /* pencilTeal.png */; };
+		FBDF1AC916A4E1F200172E86 /* pencilWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AAD16A4E1F200172E86 /* pencilWhite.png */; };
+		FBDF1ACA16A4E1F200172E86 /* pencilYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDF1AAE16A4E1F200172E86 /* pencilYellow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -265,6 +293,34 @@
 		FBCDE2CA16A4D503008D9946 /* tealButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tealButton.png; sourceTree = "<group>"; };
 		FBCDE2CB16A4D503008D9946 /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
 		FBCDE2CC16A4D503008D9946 /* yellowButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowButton.png; sourceTree = "<group>"; };
+		FBDF1A9316A4E1F200172E86 /* brushBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushBlack.png; sourceTree = "<group>"; };
+		FBDF1A9416A4E1F200172E86 /* brushBrown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushBrown.png; sourceTree = "<group>"; };
+		FBDF1A9516A4E1F200172E86 /* brushDarkBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushDarkBlue.png; sourceTree = "<group>"; };
+		FBDF1A9616A4E1F200172E86 /* brushGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushGreen.png; sourceTree = "<group>"; };
+		FBDF1A9716A4E1F200172E86 /* brushGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushGrey.png; sourceTree = "<group>"; };
+		FBDF1A9816A4E1F200172E86 /* brushLightBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushLightBlue.png; sourceTree = "<group>"; };
+		FBDF1A9916A4E1F200172E86 /* brushOrange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushOrange.png; sourceTree = "<group>"; };
+		FBDF1A9A16A4E1F200172E86 /* brushPink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushPink.png; sourceTree = "<group>"; };
+		FBDF1A9B16A4E1F200172E86 /* brushPurple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushPurple.png; sourceTree = "<group>"; };
+		FBDF1A9C16A4E1F200172E86 /* brushRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushRed.png; sourceTree = "<group>"; };
+		FBDF1A9D16A4E1F200172E86 /* brushTan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushTan.png; sourceTree = "<group>"; };
+		FBDF1A9E16A4E1F200172E86 /* brushTeal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushTeal.png; sourceTree = "<group>"; };
+		FBDF1A9F16A4E1F200172E86 /* brushWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushWhite.png; sourceTree = "<group>"; };
+		FBDF1AA016A4E1F200172E86 /* brushYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushYellow.png; sourceTree = "<group>"; };
+		FBDF1AA116A4E1F200172E86 /* pencilBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilBlack.png; sourceTree = "<group>"; };
+		FBDF1AA216A4E1F200172E86 /* pencilBrown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilBrown.png; sourceTree = "<group>"; };
+		FBDF1AA316A4E1F200172E86 /* pencilDarkBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilDarkBlue.png; sourceTree = "<group>"; };
+		FBDF1AA416A4E1F200172E86 /* pencilGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilGreen.png; sourceTree = "<group>"; };
+		FBDF1AA516A4E1F200172E86 /* pencilGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilGrey.png; sourceTree = "<group>"; };
+		FBDF1AA616A4E1F200172E86 /* pencilLightBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilLightBlue.png; sourceTree = "<group>"; };
+		FBDF1AA716A4E1F200172E86 /* pencilOrange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilOrange.png; sourceTree = "<group>"; };
+		FBDF1AA816A4E1F200172E86 /* pencilPink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilPink.png; sourceTree = "<group>"; };
+		FBDF1AA916A4E1F200172E86 /* pencilPurple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilPurple.png; sourceTree = "<group>"; };
+		FBDF1AAA16A4E1F200172E86 /* pencilRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilRed.png; sourceTree = "<group>"; };
+		FBDF1AAB16A4E1F200172E86 /* pencilTan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilTan.png; sourceTree = "<group>"; };
+		FBDF1AAC16A4E1F200172E86 /* pencilTeal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilTeal.png; sourceTree = "<group>"; };
+		FBDF1AAD16A4E1F200172E86 /* pencilWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilWhite.png; sourceTree = "<group>"; };
+		FBDF1AAE16A4E1F200172E86 /* pencilYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilYellow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,6 +408,7 @@
 				7A31CCD4168656BD0037E7E5 /* TSCBlankLetterViewController.h */,
 				7A31CCD5168656BD0037E7E5 /* TSCBlankLetterViewController.m */,
 				7A31CCD6168656BD0037E7E5 /* TSCBlankLetterViewController.xib */,
+				FBDF1A9216A4E1F200172E86 /* brush colors */,
 				FBCDE2B816A4D503008D9946 /* Draw Page Images */,
 				4C0B478016A20FD100118E8E /* Fonts */,
 				7A547FC5166DA3E1000159B7 /* Supporting Files */,
@@ -493,6 +550,41 @@
 			path = "Draw Page Images";
 			sourceTree = "<group>";
 		};
+		FBDF1A9216A4E1F200172E86 /* brush colors */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF1A9316A4E1F200172E86 /* brushBlack.png */,
+				FBDF1A9416A4E1F200172E86 /* brushBrown.png */,
+				FBDF1A9516A4E1F200172E86 /* brushDarkBlue.png */,
+				FBDF1A9616A4E1F200172E86 /* brushGreen.png */,
+				FBDF1A9716A4E1F200172E86 /* brushGrey.png */,
+				FBDF1A9816A4E1F200172E86 /* brushLightBlue.png */,
+				FBDF1A9916A4E1F200172E86 /* brushOrange.png */,
+				FBDF1A9A16A4E1F200172E86 /* brushPink.png */,
+				FBDF1A9B16A4E1F200172E86 /* brushPurple.png */,
+				FBDF1A9C16A4E1F200172E86 /* brushRed.png */,
+				FBDF1A9D16A4E1F200172E86 /* brushTan.png */,
+				FBDF1A9E16A4E1F200172E86 /* brushTeal.png */,
+				FBDF1A9F16A4E1F200172E86 /* brushWhite.png */,
+				FBDF1AA016A4E1F200172E86 /* brushYellow.png */,
+				FBDF1AA116A4E1F200172E86 /* pencilBlack.png */,
+				FBDF1AA216A4E1F200172E86 /* pencilBrown.png */,
+				FBDF1AA316A4E1F200172E86 /* pencilDarkBlue.png */,
+				FBDF1AA416A4E1F200172E86 /* pencilGreen.png */,
+				FBDF1AA516A4E1F200172E86 /* pencilGrey.png */,
+				FBDF1AA616A4E1F200172E86 /* pencilLightBlue.png */,
+				FBDF1AA716A4E1F200172E86 /* pencilOrange.png */,
+				FBDF1AA816A4E1F200172E86 /* pencilPink.png */,
+				FBDF1AA916A4E1F200172E86 /* pencilPurple.png */,
+				FBDF1AAA16A4E1F200172E86 /* pencilRed.png */,
+				FBDF1AAB16A4E1F200172E86 /* pencilTan.png */,
+				FBDF1AAC16A4E1F200172E86 /* pencilTeal.png */,
+				FBDF1AAD16A4E1F200172E86 /* pencilWhite.png */,
+				FBDF1AAE16A4E1F200172E86 /* pencilYellow.png */,
+			);
+			path = "brush colors";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -629,6 +721,34 @@
 				FBCDE2DE16A4D503008D9946 /* tealButton.png in Resources */,
 				FBCDE2DF16A4D503008D9946 /* whiteButton.png in Resources */,
 				FBCDE2E016A4D503008D9946 /* yellowButton.png in Resources */,
+				FBDF1AAF16A4E1F200172E86 /* brushBlack.png in Resources */,
+				FBDF1AB016A4E1F200172E86 /* brushBrown.png in Resources */,
+				FBDF1AB116A4E1F200172E86 /* brushDarkBlue.png in Resources */,
+				FBDF1AB216A4E1F200172E86 /* brushGreen.png in Resources */,
+				FBDF1AB316A4E1F200172E86 /* brushGrey.png in Resources */,
+				FBDF1AB416A4E1F200172E86 /* brushLightBlue.png in Resources */,
+				FBDF1AB516A4E1F200172E86 /* brushOrange.png in Resources */,
+				FBDF1AB616A4E1F200172E86 /* brushPink.png in Resources */,
+				FBDF1AB716A4E1F200172E86 /* brushPurple.png in Resources */,
+				FBDF1AB816A4E1F200172E86 /* brushRed.png in Resources */,
+				FBDF1AB916A4E1F200172E86 /* brushTan.png in Resources */,
+				FBDF1ABA16A4E1F200172E86 /* brushTeal.png in Resources */,
+				FBDF1ABB16A4E1F200172E86 /* brushWhite.png in Resources */,
+				FBDF1ABC16A4E1F200172E86 /* brushYellow.png in Resources */,
+				FBDF1ABD16A4E1F200172E86 /* pencilBlack.png in Resources */,
+				FBDF1ABE16A4E1F200172E86 /* pencilBrown.png in Resources */,
+				FBDF1ABF16A4E1F200172E86 /* pencilDarkBlue.png in Resources */,
+				FBDF1AC016A4E1F200172E86 /* pencilGreen.png in Resources */,
+				FBDF1AC116A4E1F200172E86 /* pencilGrey.png in Resources */,
+				FBDF1AC216A4E1F200172E86 /* pencilLightBlue.png in Resources */,
+				FBDF1AC316A4E1F200172E86 /* pencilOrange.png in Resources */,
+				FBDF1AC416A4E1F200172E86 /* pencilPink.png in Resources */,
+				FBDF1AC516A4E1F200172E86 /* pencilPurple.png in Resources */,
+				FBDF1AC616A4E1F200172E86 /* pencilRed.png in Resources */,
+				FBDF1AC716A4E1F200172E86 /* pencilTan.png in Resources */,
+				FBDF1AC816A4E1F200172E86 /* pencilTeal.png in Resources */,
+				FBDF1AC916A4E1F200172E86 /* pencilWhite.png in Resources */,
+				FBDF1ACA16A4E1F200172E86 /* pencilYellow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,6 +28,7 @@
 @property CGFloat brush;
 @property CGFloat opacity;
 @property UIImage *texture;
+@property NSString *textureName;
 
 @property (weak, nonatomic) IBOutlet UIButton *redButton;
 @property (weak, nonatomic) IBOutlet UIButton *yellowButton;
