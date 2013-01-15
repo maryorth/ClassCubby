@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Cga-7E-7Fr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Cga-7E-7Fr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -213,7 +213,6 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="nav-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="4RI-Mm-lFx">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="taC-Jl-3RZ"/>
                                     <constraint firstAttribute="width" constant="9" id="uqb-zI-RhV"/>
                                 </constraints>
                             </imageView>
@@ -270,28 +269,51 @@
                                     <constraint firstAttribute="height" constant="16" id="gdg-hu-aae"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vwN-6E-J0I">
+                                <accessibility key="accessibilityConfiguration" label="mainImage"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="897" id="gjU-yh-kaK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0N-o8-XAh">
+                                <accessibility key="accessibilityConfiguration" label="tempDrawImage"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="547" id="AfD-Wi-aIV"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="F0N-o8-XAh" firstAttribute="top" secondItem="c11-s1-KW7" secondAttribute="top" constant="105" id="1a1-BR-CHk"/>
                             <constraint firstItem="MHJ-WO-LcC" firstAttribute="leading" secondItem="c11-s1-KW7" secondAttribute="leading" constant="265" id="4Bi-0c-eS7"/>
                             <constraint firstItem="Yxf-qX-rvM" firstAttribute="leading" secondItem="c11-s1-KW7" secondAttribute="leading" constant="617" id="5eJ-50-olX"/>
                             <constraint firstItem="ZHR-Fm-m2v" firstAttribute="bottom" secondItem="c11-s1-KW7" secondAttribute="bottom" type="default" id="5ws-n6-VmM"/>
                             <constraint firstItem="8gS-Ye-mwg" firstAttribute="leading" secondItem="c11-s1-KW7" secondAttribute="leading" constant="419" id="6RA-Rp-ghQ"/>
+                            <constraint firstItem="4RI-Mm-lFx" firstAttribute="top" secondItem="8gS-Ye-mwg" secondAttribute="top" type="default" id="8Vf-ur-jHL"/>
+                            <constraint firstItem="F0N-o8-XAh" firstAttribute="trailing" secondItem="vwN-6E-J0I" secondAttribute="trailing" type="default" id="Ang-eX-gtr"/>
                             <constraint firstItem="Yxf-qX-rvM" firstAttribute="bottom" secondItem="MHJ-WO-LcC" secondAttribute="bottom" type="default" id="KDZ-44-aVs"/>
+                            <constraint firstItem="4RI-Mm-lFx" firstAttribute="bottom" secondItem="8gS-Ye-mwg" secondAttribute="bottom" type="default" id="PNm-24-RXp"/>
                             <constraint firstItem="Yxf-qX-rvM" firstAttribute="top" secondItem="MHJ-WO-LcC" secondAttribute="top" type="default" id="Som-cw-X5C"/>
-                            <constraint firstAttribute="bottom" secondItem="8gS-Ye-mwg" secondAttribute="bottom" constant="39" id="Y4i-4M-WWZ"/>
                             <constraint firstAttribute="bottom" secondItem="MHJ-WO-LcC" secondAttribute="bottom" constant="14" id="YOr-gH-cIR"/>
                             <constraint firstItem="ZHR-Fm-m2v" firstAttribute="leading" secondItem="c11-s1-KW7" secondAttribute="leading" constant="-1" id="Ybv-Kd-C2D"/>
                             <constraint firstItem="ZHR-Fm-m2v" firstAttribute="top" secondItem="c11-s1-KW7" secondAttribute="top" type="default" id="c3o-tE-lIQ"/>
                             <constraint firstItem="Isr-5z-3av" firstAttribute="centerX" secondItem="c11-s1-KW7" secondAttribute="centerX" type="default" id="doF-4e-JRX"/>
-                            <constraint firstAttribute="bottom" secondItem="Isr-5z-3av" secondAttribute="bottom" constant="18" id="kbh-6S-LlC"/>
                             <constraint firstItem="Yxf-qX-rvM" firstAttribute="centerY" secondItem="4RI-Mm-lFx" secondAttribute="centerY" type="default" id="mDH-ht-i9E"/>
+                            <constraint firstItem="F0N-o8-XAh" firstAttribute="leading" secondItem="c11-s1-KW7" secondAttribute="leading" constant="68" id="n7B-Ui-gpz"/>
+                            <constraint firstItem="F0N-o8-XAh" firstAttribute="top" secondItem="vwN-6E-J0I" secondAttribute="top" type="default" id="qSC-Le-ebt"/>
+                            <constraint firstItem="F0N-o8-XAh" firstAttribute="leading" secondItem="vwN-6E-J0I" secondAttribute="leading" type="default" id="rS4-bs-Lxw"/>
                             <constraint firstAttribute="trailing" secondItem="4RI-Mm-lFx" secondAttribute="trailing" constant="419" id="vm7-J3-JBv"/>
+                            <constraint firstAttribute="bottom" secondItem="Isr-5z-3av" secondAttribute="bottom" constant="18" id="yQk-Cn-cgC"/>
+                            <constraint firstItem="F0N-o8-XAh" firstAttribute="bottom" secondItem="vwN-6E-J0I" secondAttribute="bottom" type="default" id="yVn-cU-Wjq"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="2oL-nM-rx8"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="mainImage" destination="vwN-6E-J0I" id="BND-RL-oBn"/>
+                        <outlet property="tempDrawImage" destination="F0N-o8-XAh" id="xfh-1C-5Op"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ehl-1K-4Wk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,6 +338,10 @@
         </class>
         <class className="TSCDrawViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TSCDrawViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mainImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tempDrawImage" candidateClass="UIImageView"/>
+            </relationships>
         </class>
         <class className="TSCTestViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TSCTestViewController.h"/>
@@ -330,8 +356,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="SPl-bw-kkE"/>
         <segue reference="EwG-H8-efo"/>
-        <segue reference="VSS-iN-sa2"/>
-        <segue reference="4Q0-p7-42O"/>
+        <segue reference="w7K-1p-p0n"/>
     </inferredMetricsTieBreakers>
 </document>

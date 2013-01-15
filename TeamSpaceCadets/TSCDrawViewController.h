@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "TSCDrawingToolsDockViewController.h"
 
-@interface TSCDrawViewController : UIViewController
+@interface TSCDrawViewController : UIViewController{
+    
+    CGPoint lastPoint;
+    BOOL mouseSwiped;
+}
+@property (weak, nonatomic) IBOutlet UIImageView *tempDrawImage;
+@property (weak, nonatomic) IBOutlet UIImageView *mainImage;
 
 @property TSCDrawingToolsDockViewController *toolsDock;
+
 
 @end
